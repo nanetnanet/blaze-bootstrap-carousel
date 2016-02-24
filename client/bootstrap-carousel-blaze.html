@@ -1,0 +1,18 @@
+<head>
+  <title>bootstrap-carousel-blaze</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+
+  {{> hello}}
+</body>
+
+<template name="hello">
+  <button id="add">Add Slide</button>
+  <button id="remove">Remove Slide</button>
+  <p>You've added {{counter}} images to the carousel.</p>
+  {{#if hasImages }}
+    {{> carousel id="example" images=images}}
+  {{/if}}
+</template>
